@@ -6,7 +6,7 @@
   * cuDNN安装
 ## 3.软件安装
   * 在Anaconda环境下，安装Pytorch
-  * 安装Isacc Sim
+  * 安装Isaac Sim
 ## 4.软件学习
   * Pytorch：
     * 掌握Pytorch基本概念和使用方法
