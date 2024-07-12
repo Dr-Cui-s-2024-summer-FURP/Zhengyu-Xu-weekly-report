@@ -1,4 +1,5 @@
 # WEEK 4
+I'm very sorry that I can't attend the meeting this week because I'm attending summer school in Beijing.
 ## Reproduction of PointNet code
 ### Classfication
 *  process
