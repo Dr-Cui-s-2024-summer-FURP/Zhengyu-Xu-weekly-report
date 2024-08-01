@@ -2,8 +2,11 @@
 Reproduce ScatterHough
 ## $\rho$ Neighbor Voting
 def rho_neighbor_voting(A, d):
+
     A_prime = np.zeros_like(A)  
+    
     for rho in range(A.shape[0]): 
+    
         for theta in range(A.shape[1]):  
             if A[rho, theta] > 0:  
                 sum_votes = 0  
@@ -16,6 +19,7 @@ def rho_neighbor_voting(A, d):
 
 ## $\rho$ Neighbor Voting-Reduction
 def rho_neighbor_vote_reduction(A, d, threshold):
+
     lines = []  
     while True:
         max_votes = np.max(A)  
@@ -24,8 +28,7 @@ def rho_neighbor_vote_reduction(A, d, threshold):
         rho, theta = np.unravel_index(np.argmax(A), A.shape)  
         lines.append((rho, theta))  
         for x in range(A.shape[0]):
-            for y in range(A.shape[1]):
-                
+            for y in range(A.shape[1]):                
                 if abs(x * np.cos(theta) + y * np.sin(theta) - rho) < d:
                     A[x, y] = 0
     return lines 
